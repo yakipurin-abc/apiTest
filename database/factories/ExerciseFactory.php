@@ -24,7 +24,7 @@ class ExerciseFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
-            'profile' => Str::random(10),
+            'profile' => $this->faker->profile(),
         ];
     }
 }
